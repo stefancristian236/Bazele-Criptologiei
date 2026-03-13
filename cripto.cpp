@@ -1,8 +1,6 @@
-
-#include <vector>
+#include "cripto.h"
 #include <iostream>
-#include <fstream>
-#include <unordered_map>
+#include <map>
 
 class __FileOperator__ {
     private:
@@ -12,7 +10,7 @@ class __FileOperator__ {
 
         void __CheckFrequency__ () {
             std::cout << "Frecventa caracterelor:" << std::endl;
-            std::unordered_map <char, int> frequency_map;
+            std::map <char, int> frequency_map;
             for (const auto ch : text) {
                 frequency_map[ch]++;
             }
@@ -21,12 +19,3 @@ class __FileOperator__ {
             }
         }
 };
-
-int main (){
-    std::string test = "a143basdb2";
-    __FileOperator__ oper(test);
-    oper.__CheckFrequency__();
-
-
-    return 0;
-}
