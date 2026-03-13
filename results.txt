@@ -1,0 +1,6 @@
+Frecventa caracterelor este:
+a:2
+d:3
+q:1
+s:1
+w:1
