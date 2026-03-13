@@ -12,6 +12,7 @@ bool __FileOperator__::readFromFile(const std::string& inputFilePath) {
     char ch;
 
     while (file.get(ch)) {
+        if (isspace(ch)) continue;
         frequency_map[ch]++;
     }
 
