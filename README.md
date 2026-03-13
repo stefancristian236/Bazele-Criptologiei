@@ -22,7 +22,7 @@ Repo-ul este structurat sub forma unei biblioteci reutilizabile care poate fi im
 
 Evident, este nevoie de un compilator pentru C/C++, care se poate configura/instala prin intermediul MSYS64('https://www.msys2.org/') sau un IDE, precum VS sau CLion(JetBrains):
 
-Ulterior prin intermediul unui terminal(bash/PowerShell samd):
+Ulterior, prin intermediul unui terminal(bash/PowerShell etc.)
 
 g++ main.cpp cripto.cpp -o cripto_app
 .\cripto_app
