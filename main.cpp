@@ -1,36 +1,25 @@
-//for the header test
-#include "cripto.h"
 #include <iostream>
-#include <fstream>
 #include <string>
+#include "cripto.h"
 
 int main() {
-    bool text_shown = false;
+    std::string inputFile, outputFile;
 
-    std::string target;
-    std::cin >> target;
+    std::cout << "Introduceti path-ul catre fisierul sursa ";
+    std::getline(std::cin, inputFile);
 
-    std::ifstream fin(target + ".txt");
-    std::ofstream fout("results.txt");
+    std::cout << "Introduceti path-ul catre fisierul destinatie ";
+    std::getline(std::cin, outputFile);
 
-    if (!fin.is_open()) {
-        std::cerr << "Error, unable to open/find file" << std::endl;
-        return 1;
-    }
+    __FileOperator__ fileOp;
 
-    std::string s;
-    std::getline(fin, s);
+    std::cout << "Se proceseaza...\n";
     
-    std::map<char, int> myMap;
-
-    __FileOperator__ test(s);
-    myMap = test.__CheckFrequency__();
-    fout << "Frecventa caracterelor este:" << std::endl;
-    for (const auto it : myMap) {
-        fout << it.first << ":" << it.second << std::endl;
+    if (fileOp.readFromFile(inputFile)) {
+        if (fileOp.writeFrequencyToFile(outputFile)) {
+            std::cout << "Succes! Rezultatele au fost salvate in: " << outputFile << std::endl;
+        }
     }
 
-    fin.close();
-    fout.close();
     return 0;
 }
