@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "cripto.h"
 
 int main() {
