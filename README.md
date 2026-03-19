@@ -1,4 +1,4 @@
-# Bazele Criptologiei - C++
+## Bazele Criptologiei - C++
 
 Acest repo va fi imbogatit cu algoritmi dezvoltati pentru laboratoarele de Bazele Criptologiei. 
 
@@ -7,8 +7,6 @@ Repo-ul este structurat sub forma unei biblioteci reutilizabile care poate fi im
 ## Functionalitati :
 
 * **Analiza Frecventei Caracterelor:** Citeste un fisier text de la o locatie specificata si determina frecventa fiecarui caracter intr-un mod cat mai eficient dpdv computational.
-
-* **Gestiune automata a fisierelor:** Daca utilizatorul nu ofera un nume, aplicatia va genera automat un fisier 'rezultat.txt', unde vor fi stocate rezultatele.
 
 ## Structura :
 
